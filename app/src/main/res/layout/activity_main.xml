@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+
+
+    <!--It is a Custom Font  -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView_Id1"
+        android:text="Hello,I am a Mehedi 1"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+    <!--It is a Custom Font  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Id2"
+        android:text="Hello,I am a Mehedi 2"
+        android:textSize="20sp"
+        android:layout_marginBottom="25dp"
+
+        />
+
+
+    <!--It is a Default Font = typeface="monospace" -->
+    <TextView
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,I am a Mehedi 3"
+        android:textSize="20sp"
+
+
+        />
+
+</LinearLayout>
